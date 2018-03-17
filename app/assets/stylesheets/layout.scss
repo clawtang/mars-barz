@@ -1,9 +1,12 @@
 .container {
-  border: 1px solid black;
+  border: 1px solid #3399ff;
   max-width: 1000px;
   box-sizing: border-box;
   margin: auto;
-  padding: 2em;
+  padding: 1em;
+  font-family: 'Raleway', sans-serif; 
+  position: relative;
+  top: 10px; 
 }
 
 .header {
@@ -13,4 +16,6 @@
   align-items: center;
   width: 1000px;
   margin: auto;
+  font-family: 'Raleway', sans-serif;
+  border: 1px solid #3399ff;
 }

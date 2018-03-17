@@ -1,5 +1,19 @@
-<% if logged_in? %>
-  <%= render 'loggedin' %>
-<% else %>
-  <%= render 'login' %>
-<% end %>
+
+
+<div class="content-container">
+<h1>Find SKill</h1>
+<p>Self-improvement is one of the noblest tasks people can undertake.</p>
+<p>Who will you choose to accompany you on your journey?</p>
+</div>
+
+<div class="card-container">
+<div class="card">
+  <h1>Find a mentor</h1>
+  <%= link_to 'Go', search_url, class: 'button' %>
+</div>
+
+<div class="card">
+  <h1>Find an apprentice</h1>
+  <%= link_to 'Go', search_url, class: 'button' %>
+</div>
+</div>
