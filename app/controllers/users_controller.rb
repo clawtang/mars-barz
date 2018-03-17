@@ -1,4 +1,7 @@
 class UsersController < ApplicationController
+
+  skip_before_action :verify_authenticity_token
+
   def index
     @users = User.all
     if params[:search]
@@ -14,23 +17,26 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    @relationship = current_user.relationships.build
   end
 
   def create
     @user = User.new(user_params)
-    if @user.save
-      # @user.send_activation_email
-      # flash[:info] = "Please check your email to activate your account."
-      redirect_to root_url
-    else
-      render :new
+    respond_to do |format|
+      if @user.save
+        format.html { redirect_to root_url }
+        format.json {  }
+      else
+        format.html { render :new }
+      #   format.json { render json: @task.errors, status: :unprocessable_entity }
+      end
     end
   end
 
   private
 
     def user_params
-      params.require(:user).permit(:name, :email, :password, :password_confirmation)
+      params.require(:user).permit(:email, :password, :password_confirmation, :first_name, :last_name, :skill)
     end
 
 end

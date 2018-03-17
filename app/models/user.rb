@@ -1,6 +1,6 @@
 class User < ApplicationRecord
-  has_many :emails
   has_many :skills
+  has_many :relationships
   has_secure_password
 
   def self.search(search)

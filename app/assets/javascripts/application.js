@@ -13,3 +13,14 @@
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
+
+// const mentorRequestButton = document.getElementById('mentor-request');
+// mentorRequestButton.addEventListener('click', () => {
+//   console.log('click');
+//   document.getElementById('mentor-request-form').style.display = 'block';
+// });
+// const main = () => {
+//
+// }
+//
+// document.addEventListener('turbolinks:load', main);

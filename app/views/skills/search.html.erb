@@ -14,6 +14,7 @@
       <h2>First name: <%= user.first_name %></h2>
       <h2>Last name: <%= user.last_name %></h2>
       <h2>Coords: <%= "#{user.x_pos} X, #{user.y_pos} Y" %></h2>
+      <%= link_to 'Show', user_path(user) %>
     </div>
   <% end %>
 </div>

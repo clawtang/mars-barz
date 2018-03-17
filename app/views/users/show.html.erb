@@ -1,2 +1,21 @@
-<%= @user.first_name %>
+<h1><%= @user.first_name %> <%= @user.last_name %></h1>
+<p>Learned the following skills: </p>
+<% @user.upstream.each do |mentor| %>
+  <p><%= User.find(mentor).skill %></p>
+<% end %>
+
+
+
 <p>This is the page where we could load the mentoring history for the given user.</p>
+<p>I'm going to add two links here, one to choose to "Mentor" this person, and one to choose to "Apprentice to" this person.</p>
+
+<%= link_to 'Mentor', '#', id: 'mentor-request', class: 'button' %>
+<%= link_to 'Apprentice', '#', id: 'apprentice-request', class: 'button' %>
+
+<div id="mentor-request-form" class="mentor-request-form">
+  <p>Mentor request form here</p>
+</div>
+
+<div class="apprentice-request-form">
+  <p>Apprentice request form here</p>
+</div>

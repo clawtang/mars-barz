@@ -1,14 +1,17 @@
 <div class="content-container">
   <div class="map-container">
     <h1>MAP GOES HERE</h1>
-    <p class="user-pin">sample pin here, on hover it should offer the remaining details.</p>
-    <p class="user-pin-details">These are the hidden details</p>
+    <div class="map">
+      <% @users.each do |user| %>
+          <div class="user-pin" style="top: <%= user.y_pos %>px; right: <%= user.x_pos %>px;">
+            <div class="user-pin-details">
+              <h1><%= user.first_name %> <%= user.last_name %></h1>
+              <h2><%= user.skill %></h2>
+              <%= link_to 'Show', user_path(user) %>
+            </div>
+          </div>
+      <% end %>
+    </div>
 
   </div>
-  <% @users.each do |user| %>
-    <h1><%= user.first_name %> <%= user.last_name %></h1>
-    <h2><%= user.skill %></h2>
-    <p><%= "#{user.x_pos} X, #{user.y_pos} Y" %></p>
-    <%= link_to 'Show', user_path(user) %>
-  <% end %>
 </div>
