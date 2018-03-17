@@ -1,0 +1,23 @@
+// Place all the styles related to the skills controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.user-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  // overflow-x: scroll;
+  // height: 400px;
+}
+
+.user {
+  box-sizing: border-box;
+  width: 400px;
+  height: 300px;
+  // margin-right: 2em;
+  margin: 2em;
+  flex-basis: 400px;
+  padding: 2em;
+  border: 1px solid black;
+}

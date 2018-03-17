@@ -1,0 +1,19 @@
+<div class="content-container">
+  <p>search bar goes here</p>
+  <%= form_tag(users_path, :method => 'get') do %>
+    <p>
+      <%= text_field_tag :search, params[:search] %>
+      <%= submit_tag "Search", :name => nil %>
+    </p>
+  <% end %>
+</div>
+
+<div class="user-list">
+  <% @users.each do |user| %>
+    <div class="user">
+      <h2>First name: <%= user.first_name %></h2>
+      <h2>Last name: <%= user.last_name %></h2>
+      <h2>Coords: <%= "#{user.x_pos} X, #{user.y_pos} Y" %></h2>
+    </div>
+  <% end %>
+</div>

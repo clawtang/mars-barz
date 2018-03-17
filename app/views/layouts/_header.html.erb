@@ -1,0 +1,8 @@
+<header>
+  <div class="header">
+    <h1><%= link_to 'Mars Barz', root_url %></h1>
+    <div class="header-auth">
+      <%= link_to 'Log out', logout_path, method: :delete if logged_in? %>
+    </div>
+  </div>
+</header>
