@@ -14,11 +14,14 @@
  *= require_self
  */
 
+/* CAUSES MAP NOT TO SHOW CORRECTLY */
+/*
 * {
  font-family: 'Raleway', sans-serif;
  position: relative;
  left: -5px;
 }
+*/
 
 h1 {
   color: #17335E;
