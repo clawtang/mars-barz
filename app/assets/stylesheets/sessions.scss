@@ -1,0 +1,12 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    form {
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+        justify-content: space-around;
+    }
+}

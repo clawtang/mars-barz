@@ -22,6 +22,7 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
+    @user.image = 'https://252radio.com/wp-content/uploads/2016/11/default-user-image-300x300.png'
     respond_to do |format|
       if @user.save
         format.html { redirect_to root_url }
@@ -36,7 +37,7 @@ class UsersController < ApplicationController
   private
 
     def user_params
-      params.require(:user).permit(:email, :password, :password_confirmation, :first_name, :last_name, :skill)
+      params.require(:user).permit(:email, :password, :password_confirmation, :first_name, :last_name, :skill, :image)
     end
 
 end
