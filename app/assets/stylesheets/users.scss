@@ -10,7 +10,7 @@
 
 .user-pin:hover .user-pin-details {
   display: block;
-  background-color: #3399ff;
+  background-color: #eaeaea;
   width: 200px;
   // height: 200px;
   padding-bottom: 1em;
@@ -27,7 +27,7 @@
 .map {
   height: 500px;
   width: 1000px;
-  border: 1px white;
+  border: 1px solid black;
   position: relative;
 }
 
@@ -35,12 +35,14 @@
   width: 1000px;
   height: 500px;
 }
+
 .user-pin {
   position: absolute;
-  height: 20px;
-  width: 20px;
+  height: 10px;
+  width: 10px;
   border-radius: 100%;
-  background-color: white;
+  background-color: red;
+
 }
 
 .profile-pic {
