@@ -1,21 +1,25 @@
-<h1><%= @user.first_name %> <%= @user.last_name %></h1>
-<p>Learned the following skills: </p>
-<% @user.upstream.each do |mentor| %>
-  <p><%= User.find(mentor).skill %></p>
-<% end %>
+<div class="user-profile-container">
 
+  <div class="user-profile">
+    
+    <div class="user-profile-image">
+      <%= image_tag @user.image %>
+    </div>
 
+    <div class="user-profile-title">
+      <h1 style="text-transform: capitalize"><%= @user.first_name %> <%= @user.last_name %></h1>
+    </div>
 
-<p>This is the page where we could load the mentoring history for the given user.</p>
-<p>I'm going to add two links here, one to choose to "Mentor" this person, and one to choose to "Apprentice to" this person.</p>
+    <div class="user-profile-details" style="text-transform: capitalize">
+      <p><b>Skills</b>: <%= @user.skill %> </p>
+      <p><b>Birthdate</b>: <%= @user.dob %> </p>
+      <p><b>Address</b>: <%= @user.location %> </p>
+      <p><b>email</b>: <%= @user.email %> </p>
+      <p><b>Phone</b>: <%= @user.phone %> </p>
+    </div>
 
-<%= link_to 'Mentor', '#', id: 'mentor-request', class: 'button' %>
-<%= link_to 'Apprentice', '#', id: 'apprentice-request', class: 'button' %>
+    <!-- <p>This is the page where we could load the mentoring history for the given user.</p> -->
+    <!-- <p>I'm going to add two links here, one to choose to "Mentor" this person, and one to choose to "Apprentice to" this person.</p> -->
 
-<div id="mentor-request-form" class="mentor-request-form">
-  <p>Mentor request form here</p>
-</div>
-
-<div class="apprentice-request-form">
-  <p>Apprentice request form here</p>
+  </div>
 </div>

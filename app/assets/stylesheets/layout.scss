@@ -40,15 +40,17 @@ h3 {
 .button {
   text-align: center;
   a {
-  border: 1px solid #444;
-  text-decoration: none;
-  padding: .3em 1em;
-  color: #eaeaea;
-  background-color: #777;
-  display: inline-block;
-  width: 100px;
-  text-align: center;
-  postition: relative;
-  left: 10px;
+    border: 1px solid #444;
+    text-decoration: none;
+    padding: .3em 1em;
+    color: #eaeaea;
+    background-color: #777;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    postition: relative;
+    left: 10px;
+    font-family: "Roboto", sans-serif;
+
   }
 }

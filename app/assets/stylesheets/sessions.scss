@@ -3,10 +3,13 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    background-color: #eaeaea;
+    padding: 2em;
+    border-radius: 25px;
     form {
         display: flex;
         flex-direction: column;
-        height: 300px;
+        height:250px;
         justify-content: space-around;
     }
 }

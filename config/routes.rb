@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
-  get 'relationships/index'
+  get 'requests',     to: 'requests#index'
+
+  get 'requests/new', to: 'requests#new'
+
+  post 'requests', to: 'requests#create'
+
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   # root 'pages#home'

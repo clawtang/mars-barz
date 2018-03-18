@@ -1,0 +1,14 @@
+<div class="requests-container">
+
+    <h1>Make a New Request</h1>
+
+    <div class="request-form">
+    <%= form_for @request do |f| %>
+        <%= f.label :skill %>
+        <%= f.text_field :skill %>
+        <%= f.submit %>
+    <% end %>
+    </div>
+
+</div>     
+

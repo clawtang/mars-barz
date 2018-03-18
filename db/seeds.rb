@@ -16,10 +16,10 @@ skills.each do |skill|
   )
 end
 
-users = JSON.parse(File.read("#{Rails.root}/db/user.json"))
+users = JSON.parse(File.read("#{Rails.root}/db/randomuser.me.json"))
 x = 0
 users.each do |user|
-  email = user['name']['first'] + x.to_s + '@example.com'
+  email = user['email']
   password = 'foobar'
   password_confirmation = 'foobar'
   first_name = user['name']['first']
@@ -28,6 +28,10 @@ users.each do |user|
   x_pos = Random.rand(950) + 25
   y_pos = Random.rand(450) + 25
   image = user['picture']['medium']
+  location = user['location']['street'] + ", " + user['location']['city'] + ", " + user['location']['state']
+  dob = user['dob']
+  phone = user['phone']
+
   User.create!(
     email: email,
     password: password,
@@ -37,7 +41,10 @@ users.each do |user|
     skill: Skill.find(skill).skill_name,
     image: image,
     x_pos: x_pos,
-    y_pos: y_pos
+    y_pos: y_pos,
+    location: location,
+    dob: dob,
+    phone: phone
   )
   x += 1
 end

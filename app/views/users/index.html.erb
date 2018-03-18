@@ -4,16 +4,22 @@
       <%= image_tag 'map1.png', class: 'map-image' %>
       <% @users.each do |user| %>
           <div class="user-pin" style="top: <%= user.y_pos %>px; right: <%= user.x_pos %>px;">
-            <div class="user-pin-details">
+            <div class="user-pin-details" style="text-transform: capitalize">
               <%= image_tag user.image, class: 'profile-pic' %>
               <h3><%= user.first_name %> <%= user.last_name %></h3>
               <h3><%= user.skill %></h3>
               <div class="button">
-              <%= link_to 'View Portfolio', user_path(user)%>
+              <%= link_to 'Portfolio', user_path(user)%>
             </div>
             </div>
           </div>
       <% end %>
     </div>
   </div>
+  <a href="/requests/new">
+  <div class="request-link">
+    <button type="button">Make a Request</button>
+  </div>
+  </a>
+
 </div>

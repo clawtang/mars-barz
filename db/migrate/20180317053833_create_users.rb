@@ -13,6 +13,10 @@ class CreateUsers < ActiveRecord::Migration[5.1]
       t.integer         :x_pos
       t.integer         :y_pos
 
+      t.string          :location
+      t.string          :dob
+      t.string          :phone
+
       t.timestamps
     end
   end

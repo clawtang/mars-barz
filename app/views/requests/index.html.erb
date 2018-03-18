@@ -1,0 +1,22 @@
+<div class="request-confirmation-container">
+    <div class="requests-list">        
+
+        <div class="request-header">
+            <h1>Mentoring Requests</h1>
+        </div>
+
+        <% @requests.each do |request| %>
+            <div class="request">
+                <h1><%= request.user.full_name %></h1>
+                <p>Is looking to aquire skill in <%= request.skill %></p>
+            </div>
+        <% end %>
+    </div>
+
+    <a href="/users">
+        <div class="return-user-link">
+            <button type="button">Return</button>
+        </div>
+    </a>
+
+</div>
