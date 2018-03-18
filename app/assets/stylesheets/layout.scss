@@ -47,7 +47,7 @@ h3 {
 .button {
   text-align: center;
   a {
-    border: 1px solid #444;
+    border-radius: 10px;
     text-decoration: none;
     padding: .3em 1em;
     color: #eaeaea;
@@ -58,6 +58,11 @@ h3 {
     postition: relative;
     left: 10px;
     font-family: "Roboto", sans-serif;
+
+    &:hover {
+      color: white;
+      background-color: #5E5E5E;
+    }
 
   }
 }

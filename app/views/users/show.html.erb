@@ -1,7 +1,7 @@
 <div class="user-profile-container">
 
   <div class="user-profile">
-    
+
     <div class="user-profile-image">
       <%= image_tag @user.image %>
     </div>
@@ -16,6 +16,7 @@
       <p><b>Address</b>: <%= @user.location %> </p>
       <p><b>email</b>: <%= @user.email %> </p>
       <p><b>Phone</b>: <%= @user.phone %> </p>
+      <button class="message">Message</button>
     </div>
 
     <!-- <p>This is the page where we could load the mentoring history for the given user.</p> -->

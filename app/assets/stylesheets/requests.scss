@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .requests-container {
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
     margin: auto;
     padding: 3em;
     border-radius: 25px;
@@ -15,12 +15,12 @@
 
 .request-confirmation-container {
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
     margin: auto;
     padding: 3em;
     .requests-list {
         display: flex;
-        flex-direction: column;
+        flex-flow: column;
         align-items: center;
         .request-header {
             margin: 2em;
@@ -33,10 +33,10 @@
 
             margin: 2em;
             background-color: silver;
-            padding: 4em;
+            padding: 2em;
             border-radius: 25px;
             h1 {
-                margin-bottom: 1em;
+                margin-bottom: 0.5em;
             }
 
         }

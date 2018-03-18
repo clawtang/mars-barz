@@ -11,7 +11,10 @@
     form {
         display: flex;
         flex-direction: column;
-        height:250px;
-        justify-content: space-around;
+        padding: 1rem 2rem;
+        justify-content: flex-end;
+        input {
+          margin-bottom: .5em;
+        }
     }
 }
