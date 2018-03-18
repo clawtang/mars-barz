@@ -14,28 +14,29 @@
  *= require_self
  */
 
- * {
-   font-family: 'Raleway', sans-serif;
-   position: relative;
-   left: -5px;
-  }
+* {
+ font-family: 'Raleway', sans-serif;
+ position: relative;
+ left: -5px;
+}
 
-  h1 {
-    color: #17335E;
-    position: relative;
-    left: 70px;
-    font-weight: 40px;
-  }
+h1 {
+  color: #17335E;
+  position: relative;
+  left: 70px;
+  font-weight: 40px;
+}
 
-  a {
-    color: #17335E;
-    text-decoration: none;  }
+a {
+  color: #17335E;
+  text-decoration: none;
+}
 
 a:hover {
   color: #17335E;
 }
 
- @import url('https://fonts.googleapis.com/css?family=Barlow:700|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Barlow:700|Roboto');
 
 body {
   background:  url("https://cdn-images-1.medium.com/max/2000/1*pfo7gDCJU9PZ1bOxkKhAtg.jpeg") no-repeat fixed center ;

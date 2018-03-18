@@ -18,10 +18,8 @@
   box-shadow: 0 0 10px 0 rgba(0,0,0,0.75);
 }
 
-.apprentice-request-form,
-.mentor-request-form {
-  display: none;
-    border: 1px solid white;
+.map-image {
+  position: absolute;
 }
 
 .map {
@@ -29,11 +27,6 @@
   width: 1000px;
   border: 1px solid black;
   position: relative;
-}
-
-.map-image {
-  width: 1000px;
-  height: 500px;
 }
 
 .user-pin {
