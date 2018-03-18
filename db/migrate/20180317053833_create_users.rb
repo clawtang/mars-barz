@@ -6,6 +6,7 @@ class CreateUsers < ActiveRecord::Migration[5.1]
       t.string          :first_name
       t.string          :last_name
       t.string          :skill
+      t.string          :image
       t.text            :upstream,    array: true, default: []
       t.text            :downstream,  array: true, default: []
 

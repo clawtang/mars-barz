@@ -18,3 +18,13 @@
  * {
    /* border: 1px solid hotpink; */
  }
+
+ @import url('https://fonts.googleapis.com/css?family=Barlow:700|Roboto');
+
+body {
+  background:  url("https://cdn-images-1.medium.com/max/2000/1*pfo7gDCJU9PZ1bOxkKhAtg.jpeg") no-repeat fixed center ;
+  background-size: cover;
+  margin:0;
+
+
+}

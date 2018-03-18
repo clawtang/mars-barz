@@ -1,9 +1,7 @@
 .container {
-  border: 1px solid black;
   max-width: 1000px;
   box-sizing: border-box;
   margin: auto;
-  padding: 2em;
 }
 
 .header {
@@ -13,4 +11,36 @@
   align-items: center;
   width: 1000px;
   margin: auto;
+}
+
+.intro {
+  text-align: center;
+  padding: 1em;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+h3 {
+  text-align: center;
+}
+
+.button {
+  text-align: center;
+
+  a {
+  border: 1px solid #444;
+  text-decoration: none;
+  padding: .3em 1em;
+  color: #eaeaea;
+  background-color: #777;
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  postition: relative;
+  left: 10px;
+  }
+
 }

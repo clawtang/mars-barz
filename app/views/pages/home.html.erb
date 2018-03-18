@@ -1,5 +1,25 @@
-<% if logged_in? %>
-  <%= render 'loggedin' %>
-<% else %>
-  <%= render 'login' %>
-<% end %>
+
+
+<div class="content-container">
+  <h1>Welcome to Ambitions</h1>
+  <div class="intro">
+  <p>Self-improvement is one of the noblest tasks people can undertake.</p>
+  <p>Who will you choose to accompany you on your journey?</p>
+</div>
+  <div class="card-container">
+    <a href="/users">
+      <div class="card card2">
+        <!-- <img src="https://via.placeholder.com/1000x1000" alt="placeholder"> -->
+        <%= image_tag 'mentor.svg', class: 'svg' %>
+        <h2>Find a Mentor</h2>
+      </div>
+    </a>
+    <a href="/users">
+      <div class="card card3">
+        <!-- <img src="https://via.placeholder.com/1000x1000" alt="placeholder"> -->
+        <%= image_tag 'student.svg', class: 'svg' %>
+        <h2>Find a Mentee</h2>
+      </div>
+    </a>
+  </div>
+</div>

@@ -17,7 +17,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
-    @relationship = current_user.relationships.build
+    # @relationship = current_user.relationships.build
   end
 
   def create
