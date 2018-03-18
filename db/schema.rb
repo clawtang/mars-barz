@@ -37,6 +37,7 @@ ActiveRecord::Schema.define(version: 20180317160311) do
     t.string "first_name"
     t.string "last_name"
     t.string "skill"
+    t.string "image"
     t.text "upstream", default: [], array: true
     t.text "downstream", default: [], array: true
     t.integer "x_pos"

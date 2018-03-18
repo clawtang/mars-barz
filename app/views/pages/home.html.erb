@@ -1,18 +1,24 @@
 
 
 <div class="content-container">
+
 <h1>Find Skill</h1>
- 
+
 </div>
 
 <div class="card-container">
-<div class="card">
-  <h1>Find a mentor</h1>
-  <%= link_to 'Go', search_url, class: 'button' %>
-</div>
-
-<div class="card">
-  <h1>Find an apprentice</h1>
-  <%= link_to 'Go', search_url, class: 'button' %>
-</div>
+  <a href="/users">
+    <div class="card card2">
+      <!-- <img src="https://via.placeholder.com/1000x1000" alt="placeholder"> -->
+      <%= image_tag 'mentor.svg', class: 'svg' %>
+      <h2>Find a Mentor</h2>
+    </div>
+  </a>
+  <a href="/users">
+    <div class="card card3">
+      <!-- <img src="https://via.placeholder.com/1000x1000" alt="placeholder"> -->
+      <%= image_tag 'student.svg', class: 'svg' %>
+      <h2>Find a Mentee</h2>
+    </div>
+  </a>
 </div>
