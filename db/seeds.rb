@@ -22,8 +22,8 @@ users.each do |user|
   email = user['email']
   password = 'foobar'
   password_confirmation = 'foobar'
-  first_name = user['name']['first']
-  last_name = user['name']['last']
+  first_name = user['name']['first'].titleize
+  last_name = user['name']['last'].titleize
   skill = Random.rand(10) + 1
   x_pos = Random.rand(950) + 25
   y_pos = Random.rand(450) + 25
@@ -67,3 +67,8 @@ end
 #     y_pos: y_pos
 #   )
 # end
+10.times do |u|
+  User.find(Random.rand(100)).requests.create!(
+    skill: skills[Random.rand(10)]
+  )
+end

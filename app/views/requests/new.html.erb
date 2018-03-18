@@ -5,8 +5,13 @@
     <div class="request-form">
     <%= form_for @request do |f| %>
         <%= f.label :skill %>
-        <%= f.text_field :skill %>
+        <% options = options_from_collection_for_select(@skills, 'id', 'skill_name') %>
+        <%= f.select :skill, options %>
+        <%= f.label :mentor %>
+        <% options = options_from_collection_for_select(@users, 'id', 'full_name') %>
+        <%= f.select :mentor, options %>
         <%= f.submit %>
+
     <% end %>
     </div>
 

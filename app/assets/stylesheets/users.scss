@@ -9,13 +9,22 @@
 }
 
 .user-pin:hover .user-pin-details {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: #eaeaea;
   width: 200px;
   // height: 200px;
   padding-bottom: 1em;
   border-radius: 25px;
-  box-shadow: 0 0 10px 0 rgba(0,0,0,0.75);
+  box-shadow: 0 0 10px #0000009a;
+  h3, h4 {
+    margin: .3em;
+  }
+  .button {
+    margin: .5em auto;
+  }
 }
 
 .map-image {
@@ -34,7 +43,7 @@
   height: 10px;
   width: 10px;
   border-radius: 100%;
-  background-color: red;
+  background-color: #ff0000af;
 
 }
 
@@ -46,7 +55,7 @@
   height: 75px;
   display: block;
   margin: 1em auto; 
-
+  box-shadow: 0px 0px 10px #0000009a;
 }
 
 
@@ -54,6 +63,11 @@
 .signup-container {
   display: flex;
   flex-direction: column;
+  background-color: #eaeaea;
+  border-radius: 25px;
+  padding: 2em;
+  margin-top: 7em;
+
 }
 
 .signup-form {
@@ -85,7 +99,8 @@
   justify-content: space-around;
   margin: auto;
   width: 1000px;
-  height: 100vh;
+
+  // height: 100vh;
   overflow: scroll;
   .user-profile {
     background-color: #eaeaeae0;

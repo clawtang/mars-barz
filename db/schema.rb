@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 20180318091844) do
 
   create_table "requests", force: :cascade do |t|
     t.string "skill"
+    t.string "mentor"
     t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

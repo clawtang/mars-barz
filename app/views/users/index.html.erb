@@ -6,8 +6,8 @@
           <div class="user-pin" style="top: <%= user.y_pos %>px; right: <%= user.x_pos %>px;">
             <div class="user-pin-details" style="text-transform: capitalize">
               <%= image_tag user.image, class: 'profile-pic' %>
-              <h3><%= user.first_name %> <%= user.last_name %></h3>
-              <h3><%= user.skill %></h3>
+              <h3 style="color: #17335E"><%= user.full_name %></h3>
+              <h4><%= user.skill %></h4>
               <div class="button">
               <%= link_to 'Portfolio', user_path(user)%>
             </div>

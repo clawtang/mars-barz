@@ -1,12 +1,6 @@
 <header>
   <div class="header">
-
-    
-
-    <h1><%= link_to 'Search for Skill', root_url %>  </h1>
+    <%= link_to 'Log out', logout_path, method: :delete, class: 'button' if logged_in? %>
   </div>
 </header>
 
-<form action="/action_page.php">
- 
-</form>
