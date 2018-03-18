@@ -15,11 +15,36 @@
  */
 
 
- * {
-   /* border: 1px solid hotpink; */
-  
-
+ * {   
    font-family: 'Raleway', sans-serif;
+   position: relative; 
+   left: -5px;   
+  }
+
+  h1 {
+    color: #17335E;
+    position: relative;
+    left: 70px; 
+    font-weight: 40px;
+
+  }
+  a {
+    color: #17335E;
+    text-decoration: none;
+  }
+
+a:hover {
+  color: #17335E;
+}
+.user {
+  padding: 50px;
+  top: 5px; 
+}
+
+body {  background-color:#F0F4F1; }
+ 
 
 
- }
+
+ 
+ 
